@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.zebra.jamesswinton.scantocloudwedge",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "properties": [],
+      "versionCode": 1,
+      "versionName": "1",
+      "enabled": true,
+      "outputFile": "Scan To Cloud Wedge (v1.0).apk"
+    }
+  ]
+}

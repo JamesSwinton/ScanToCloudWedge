@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context=".MainActivity">
+
+  <androidx.cardview.widget.CardView
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="horizontal"
+      android:weightSum="10">
+
+      <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_weight="8">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="4dp"
+          android:orientation="horizontal"
+          android:weightSum="10">
+
+          <TextView
+            android:id="@+id/post_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:layout_weight="7"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            tools:text="Posting scan..." />
+
+          <TextView
+            android:id="@+id/timestamp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="5pt"
+            android:gravity="end"
+            android:layout_gravity="center"
+            tools:text="12:37:08.546" />
+
+        </LinearLayout>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="4dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:orientation="horizontal"
+          android:weightSum="10">
+
+          <TextView
+            android:id="@+id/data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textSize="5pt"
+            tools:text="Data:\n543657564543" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DADADA" />
+
+          <TextView
+            android:id="@+id/symbology"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="5pt"
+            tools:text="Symbology:\nUPC-A" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DADADA" />
+
+          <TextView
+            android:id="@+id/source"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="5pt"
+            tools:text="Source:\nScan Device" />
+
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DADADA" />
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <ImageView
+        android:id="@+id/status_icon"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:padding="8dp"
+        tools:src="@drawable/ic_info"/>
+
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+</layout>

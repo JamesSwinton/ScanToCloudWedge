@@ -1,0 +1,25 @@
+<resources>
+  <string name="app_name">Scan To Cloud Wedge</string>
+
+  <!-- Preferences -->
+  <string name="base_url_pref_key">base_url</string>
+  <string name="relative_endpoint_pref_key">relative_endpoint</string>
+  <string name="base_url_default_value">https://node-red-rt2.eu-gb.mybluemix.net/</string>
+  <string name="relative_endpoint_default_value">zebra</string>
+
+  <!-- Scan Event -->
+  <string name="data_holder">Data:\n\n%1$s</string>
+  <string name="symbology_holder">Symbology:\n\n%1$s</string>
+  <string name="source_holder">Source:\n\n%1$s</string>
+
+  <!-- DataWedge -->
+  <string name="scan_action">com.zebra.scantocloudwedge.SCAN</string>
+  <string name="datawedge_intent_key_source">com.symbol.datawedge.source</string>
+  <string name="datawedge_intent_key_label_type">com.symbol.datawedge.label_type</string>
+  <string name="datawedge_intent_key_data">com.symbol.datawedge.data_string</string>
+
+  <!-- Responses -->
+  <string name="unsuccessful_http_response">The server returned an unsuccessful response code: <b>$1$d</b> due to: <b>%2$s</b></string>
+  <string name="request_failed">The request failed to complete: %1$s</string>
+
+</resources>
